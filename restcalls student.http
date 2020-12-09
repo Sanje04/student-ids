@@ -1,0 +1,47 @@
+POST http://127.0.0.1:5000/student/update/subject/jc1003
+content-type: application/json
+
+{
+    "Physics" : 92,
+    "Geography" : 83,
+    "Math" : 85,
+    "English" : 83
+}
+        
+###
+
+POST http://127.0.0.1:5000/student/add/
+content-type: application/json
+
+{
+    "no" : "jc1004",
+    "name" : "Kevin James",
+    "grade" : 12,
+    "subjects" : {
+        "Drama" : 94,
+        "English" : 88,
+        "Arts" : 86,
+        "History" : 81
+    }
+}
+
+###
+
+POST http://127.0.0.1:5000/student/update/jc1004
+content-type: application/json
+
+{
+    "no" : "jc1004",
+    "name" : "Kevin Carl",
+    "grade" : 12,
+    "subjects" : {
+        "Drama" : 94,
+        "English" : 88,
+        "Arts" : 86,
+        "History" : 81
+    }
+}
+
+###
+
+GET http://127.0.0.1:5000/student/jc1004
